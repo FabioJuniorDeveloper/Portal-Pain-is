@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIÁVEIS */
+:root {
+    --bg-color: #FFF;
+    --color-primary: #030f27;
+    --color-second: #fdbe33;
+    --color-text: #666666;
+    --color-text-second: #FFF;
+    --max-width: 1366px;
+}
+
+/* CONFIGURAÇÂO PADRÃO */
+body {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    background-color: #FFF;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    height: 100%;
+}
+
+/* HEADER */
+header {
+    height: 100px;
+    width: 100%;
+    background-color: var(--color-primary);
+    color: var(--bg-color);
+}
+
+header nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav a.logo {
+    width: auto;
+    height: 100px;
+}
+
+header nav a.logo img {
+    height: 100%;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-transform: uppercase;
+    gap: 20px;
+}
+
+header ul li {
+    font-size: 16px;
+    line-height: 22.5px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+    padding-bottom: 2px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: var(--bg-color);
+}
+
+header ul li:hover {
+    color: var(--color-second);
+}
+
+/* MAIN */
+
+main {
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+}
+
+main .slider {
+    flex: 1;
+}
+
+main .cards {
+    height: 250px;
+    background-color: var(--color-primary);
+    color: var(--bg-color);
+}
+
+main .cards .card-info-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+main .cards .card-info-container .card-info {
+    flex: 1;
+    height: 100%;
+}
+
+.cards .card-info-container .card-info .bg-second {
+    background-color: var(--color-second);
+}
+
+/* MAIN SLIDER */
+
+main .slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+main .slider .slider--width {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: all ease 1s;
+}
+
+main .slider .slider--width .slider--item {
+    height: inherit;
+    position: relative;
+    width: 100vw;
+}
+
+main .container-slider {
+    max-width: var(--max-width);
+}
+
+main .slider-1 {
+    background-image: url('../images/surf-40.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main .slider-2 {
+    background-image: url('../images/surf-49.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main .slider-3 {
+    background-image: url('../images/surf-47.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main div.slider-bg-coverDark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* fundo preto translúcido */
+    z-index: 1;
+    /* para garantir que fique atrás do texto */
+}
+
+main article.slider--corrent {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+main h1 {
+    font-size: 7.5rem;
+    color: #FFF;
+    margin-bottom: 15px;
+}
+
+main h3 {
+    font-size: 3rem;
+    color: #FFF;
+    margin-bottom: 15px;
+}
+
+main button.btn {
+    text-transform: uppercase;
+    padding: 15px 35px;
+    background: var(--color-second);
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    border: 2px solid var(--color-second);
+    transition: .3s;
+    cursor: pointer;
+}
+
+main button.btn:hover {
+    opacity: 0.9;
+}
