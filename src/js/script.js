@@ -37,4 +37,4 @@ let updateMarginSlide = () => {
     document.querySelector('.slider--width').style.marginLeft = `-${(sliderItemWidth * currentSlide)}px`; //Multiplico pela numero do corrent slide
 }
 
-// setInterval(goNext, 3000)
+setInterval(goNext, 5000)
