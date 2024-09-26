@@ -6,16 +6,6 @@ document.querySelector('.slider--width').style.width = `${sliderWidth * totalSli
 
 let goNext = () => {
     currentSlide++;
-
-    let slidesCorrent = document.querySelectorAll('.slider--corrent');
-    slidesCorrent.forEach((itemSlide) => {
-        let dataSlide = itemSlide.getAttribute('data-slide-to');
-        if (currentSlide == dataSlide) {
-            itemSlide.innerHTML += 'Ativo'
-        }
-    })
-
-
     if (currentSlide >= totalSlides) {
         currentSlide = 0;
     }
