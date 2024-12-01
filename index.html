@@ -18,13 +18,13 @@
                         alt="Logotipo da empresa Portal Painéis"></a>
                 <ul>
                     <li class="hvr-underline-from-center">
-                        <a href="#">Home</a>
+                        <a href="#main">Home</a>
                     </li>
                     <li class="hvr-underline-from-center">
                         <a href="#sobre">Sobre A Empresa</a>
                     </li>
                     <li class="hvr-underline-from-center">
-                        <a href="">Produto</a>
+                        <a href="#produto">Produto</a>
                     </li>
 
                     <li class="hvr-underline-from-center">
@@ -37,8 +37,8 @@
             </nav>
         </div>
     </header>
-    <main>
-        <section class="slider">
+    <main id="main">
+        <section class=" slider">
             <article class="slider--width">
                 <article class="slider--item slider-1">
                     <div class="slider-bg-coverDark"></div>
@@ -114,8 +114,8 @@
                 <img src="src/images/surf-20-compressed.webp" alt="sobre a empresa">
             </article>
             <article class="sobre-info">
-                <h2>20 Anos de Experiência</h2>
-                <p>A PORTAL SISTEMA DE PAINÉIS é líder em inovação e qualidade. Com 20 anos de trajetória, somos
+                <h2>16 Anos de Experiência</h2>
+                <p>A PORTAL SISTEMA DE PAINÉIS é líder em inovação e qualidade. Com 16 anos de trajetória, somos
                     pioneiros em tecnologia para garantir os melhores produtos.</p>
 
                 <p>Nossos painéis são leves, duráveis e se adaptam a qualquer projeto. Testamos rigorosamente cada
@@ -127,6 +127,72 @@
             </article>
         </div>
     </section>
+
+    <section class="acabamentos" id="produto">
+        <div class="container ">
+            <h2 class="tittle-acabamento">Nossos Produtos</h2>
+            <div id="grid-container">
+                <div class="acabamento" data-acabamento="tijolo">
+                    <div class="image-container">
+                        <img src="src/images/vivo-fazenda-boa-vista-7-compressed.jpg" alt="Tijolo">
+                        <div class="hover-text">
+                            <p>Elegância e charme rústico dos tijolos cerâmicos tradicionais, com a estética natural do
+                                tijolo maciço.</p>
+                        </div>
+                    </div>
+                    <div class="info-container">
+                        <h3>Tijolo</h3>
+                        <button class="open-modal" onclick="openModal('tijolo')">+</button>
+                    </div>
+
+                </div>
+
+                <div class="acabamento" data-acabamento="pedra-madeira">
+                    <div class="image-container">
+                        <img src="src/images/arua-2-compressed.jpg" alt="Pedra Madeira">
+                        <div class="hover-text">
+                            <p>Beleza natural com cortes únicos, ideal para interiores e fachadas com estilo rústico e
+                                atemporal.</p>
+                        </div>
+                    </div>
+                    <div class="info-container">
+                        <h3>Pedra Madeira</h3>
+                        <button class="open-modal" onclick="openModal('pedra-madeira')">+</button>
+                    </div>
+
+                </div>
+                <div class="acabamento" data-acabamento="pedra-ferro">
+                    <div class="image-container">
+                        <img src="src/images/surf-49-compressed.webp" alt="Pedra Ferro">
+                        <div class="hover-text">
+                            <p>Cortes irregulares e estética rústica, perfeitos para destacar interiores e fachadas com
+                                sofisticação</p>
+                        </div>
+                    </div>
+                    <div class="info-container">
+                        <h3>Pedra Ferro</h3>
+                        <button class="open-modal" onclick="openModal('pedra-ferro')">+</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close-modal" onclick="closeModal()">X</span>
+            <div class="carousel">
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <div class="carousel-images"></div>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+
+
 
 
     <script src="src/js/script.js"></script>
