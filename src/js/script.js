@@ -34,19 +34,19 @@ setInterval(goNext, 5000)
 // Imagens por acabamento
 const imagesByAcabamento = {
     "tijolo": [
-        "../src/images/surf-49-compressed.webp",
-        "../src/images/vivo-fazenda-boa-vista-7-compressed.jpg",
-        "../src/images/surf-prototipo-4-compressed.jpg"
+        "./src/images/surf-47-compressed.webp",
+        "./src/images/vivo-fazenda-boa-vista-7-compressed.jpg",
+        "./src/images/surf-prototipo-4-compressed.jpg"
     ],
     "pedra-madeira": [
-        "../src/images/surf-47-compressed.jpg",
-        "../src/images/surf-47-compressed.jpg",
-        "../src/images/surf-47-compressed.jpg"
+        "./src/images/vivo-fazenda-boa-vista-7-compressed.jpg",
+        "./src/images/vivo-fazenda-boa-vista-7-compressed.jpg   ",
+        "./src/images/surf-47-compressed.jpg"
     ],
     "pedra-ferro": [
-        "../src/images/surf-47-compressed.jpg",
-        "../src/images/surf-47-compressed.jpg",
-        "../src/images/surf-47-compressed.jpg"
+        "./src/images/surf-47-compressed.jpg",
+        "./src/images/surf-47-compressed.jpg",
+        "./src/images/surf-47-compressed.jpg"
     ]
 };
 
@@ -100,6 +100,33 @@ function changeSlide(direction) {
 }
 
 
+var swiper = new Swiper('.swiper', {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        480: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        },
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        }
+    }
+});
 
 
 

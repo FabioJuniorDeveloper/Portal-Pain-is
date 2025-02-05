@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="icon" type="image/webp" href="src/images/LOGOMARCA.png">
     <link rel="stylesheet" href="src/css/Hover-master/css/hover.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Portal Painéis</title>
 </head>
 
@@ -24,11 +25,11 @@
                         <a href="#sobre">Sobre A Empresa</a>
                     </li>
                     <li class="hvr-underline-from-center">
-                        <a href="#produto">Produto</a>
+                        <a href="#acabamento">Produto</a>
                     </li>
 
                     <li class="hvr-underline-from-center">
-                        <a href="">Serviços</a>
+                        <a href="#servicos">Serviços</a>
                     </li>
                     <li class="hvr-underline-from-center">
                         <a href="">Contato</a>
@@ -128,7 +129,7 @@
         </div>
     </section>
 
-    <section class="acabamentos" id="produto">
+    <section class="acabamentos" id="acabamento">
         <div class="container ">
             <h2 class="tittle-acabamento">Nossos Produtos</h2>
             <div id="grid-container">
@@ -179,6 +180,82 @@
 
         </div>
     </section>
+    <section class="cards">
+        <div class="container">
+            <article class="card-info-container">
+                <article class="card-info">
+                    <div class="card-img">
+                        <img src="src/icones/inovacao.png" alt="">
+                    </div>
+                    <div class="card-info-text">
+                        <h3>Pioneirismo</h3>
+                        <p>Inovação constante que transforma o mercado.</p>
+                    </div>
+                </article>
+                <article class="card-info bg-second">
+                    <div class="card-img">
+                        <img src="src/icones/boa-qualidade.png" alt="">
+                    </div>
+                    <div class="card-info-text">
+                        <h3>Qualidade Superior</h3>
+                        <p>Materiais que garantem beleza e durabilidade.</p>
+                    </div>
+                </article>
+                <article class="card-info">
+                    <div class="card-img">
+                        <img src="src/icones/parede.png" alt="">
+                    </div>
+                    <div class="card-info-text">
+                        <h3>Acabamento Perfeito</h3>
+                        <p>Detalhes que elevam a estética da sua obra.</p>
+                    </div>
+                </article>
+            </article>
+
+        </div>
+    </section>
+
+
+    <section class="servicos" id="servicos">
+        <div class="container">
+            <h2 class="tittle-servicos">Nosssos Serviços</h2>
+            <article class="servicos-slides">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="src/images/surf-20-compressed.webp" alt="Serviço 1">
+                            <div class="slide-text">Serviço 1 - Descrição breve</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="src/images/surf-40-compressed.webp" alt="Serviço 2">
+                            <div class="slide-text">Serviço 2 - Descrição breve</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="src/images/surf-40-compressed.webp" alt="Serviço 3">
+                            <div class="slide-text">Serviço 3 - Descrição breve</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="src/images/surf-47-compressed.webp" alt="Serviço 4">
+                            <div class="slide-text">Serviço 4 - Descrição breve</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="src/images/surf-49-compressed.webp" alt="Serviço 5">
+                            <div class="slide-text">Serviço 5 - Descrição breve</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="src/images/surf-49-compressed.webp" alt="Serviço 6">
+                            <div class="slide-text">Serviço 6 - Descrição breve</div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+        </div>
+        </article>
+        </div>
+    </section>
 
     <!-- Modal -->
     <div class="modal" onclick="closeModal()">
@@ -194,8 +271,9 @@
 
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="src/js/script.js"></script>
+
 </body>
 
 </html>
