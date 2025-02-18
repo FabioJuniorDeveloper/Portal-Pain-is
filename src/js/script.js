@@ -129,5 +129,24 @@ var swiper = new Swiper('.swiper', {
 });
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.querySelector(".menu-btn");
+    const navbar = document.querySelector(".navbar");
+    const navLinks = document.querySelectorAll(".navbar a");
+
+    menuBtn.addEventListener("click", function () {
+        navbar.classList.toggle("active");
+        menuBtn.classList.toggle("open");
+    });
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", function () {
+            navbar.classList.remove("active");
+            menuBtn.classList.remove("open");
+        });
+    });
+});
+
+
 
 
