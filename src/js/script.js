@@ -113,7 +113,7 @@ var swiper = new Swiper('.swiper', {
         clickable: true,
     },
     breakpoints: {
-        420: {
+        400: {
             slidesPerView: 1,
             spaceBetween: 20
         },
