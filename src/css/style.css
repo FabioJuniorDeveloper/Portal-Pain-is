@@ -946,6 +946,7 @@ h2.tittle-servicos {
 
     section.cards {
         margin-bottom: 160px;
+
     }
 
     .card-info:nth-child(3) {
@@ -1006,7 +1007,7 @@ h2.tittle-servicos {
     }
 
     main h1 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     section.cards .card-info-container {
@@ -1020,6 +1021,7 @@ h2.tittle-servicos {
 
     section.cards {
         margin-bottom: 240px;
+        height: 130px
     }
 
     .card-info:nth-child(3) {
@@ -1048,5 +1050,22 @@ h2.tittle-servicos {
 
     .footer-section {
         align-items: center;
+    }
+
+    .btn,
+    .btn a {
+        padding: 10px 20px;
+    }
+
+    section.cards .card-info-container .card-info {
+        padding: 20px;
+    }
+
+    .card-info-text h3 {
+        font-size: 2rem;
+    }
+
+    .card-info-text p {
+        font-size: 1.5rem;
     }
 }
