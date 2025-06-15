@@ -34,7 +34,7 @@ setInterval(goNext, 5000)
 // Imagens por acabamento
 const imagesByAcabamento = {
     "tijolo": [
-        "./src/images/surf-47-compressed.webp",
+        "./src/images/vivo-fazenda-boa-vista-3-webp_11zon.webp",
         "./src/images/vivo-fazenda-boa-vista-7-compressed.jpg",
         "./src/images/surf-prototipo-4-compressed.jpg"
     ],
@@ -146,6 +146,10 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+
+
 
 
 

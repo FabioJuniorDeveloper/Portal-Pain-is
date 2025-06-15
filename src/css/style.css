@@ -488,6 +488,7 @@ div#grid-container {
     font-size: 20px;
     color: #fdbe33;
     margin-left: 20px;
+    margin-bottom: 0;
 }
 
 button.open-modal {
@@ -883,6 +884,10 @@ h2.tittle-servicos {
     transition: color 0.3s;
 }
 
+.social-icons-footer a:hover {
+    color: var(--color-second);
+}
+
 .social-icons a:hover {
     color: var(--bg-color);
 }
@@ -1068,6 +1073,10 @@ h2.tittle-servicos {
     .card-info-text p {
         font-size: 1.5rem;
     }
+
+    .close-modal {
+        top: -4px;
+    }
 }
 
 @media (max-width:425px) {
@@ -1097,7 +1106,11 @@ h2.tittle-servicos {
     }
 
     main h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
+    }
+
+    main h3 {
+        font-size: 2.0rem;
     }
 
     section.cards .card-info-container {
@@ -1145,6 +1158,7 @@ h2.tittle-servicos {
     .btn,
     .btn a {
         padding: 10px 20px;
+        font-size: 1.3rem;
     }
 
     section.cards .card-info-container .card-info {
@@ -1163,4 +1177,83 @@ h2.tittle-servicos {
     .mapa>iframe {
         width: 100%;
     }
+
+    .close-modal {
+        top: -4px;
+    }
+}
+
+
+/* ===== SCROLL PERSONALIZADO ===== */
+/* Funciona no Chrome, Edge e Safari */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    /* #030f27 */
+    border-radius: 10px;
+    border: 2px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-second);
+    /* #fdbe33 */
+}
+
+/* Para Firefox */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-second) #f1f1f1;
+}
+
+/* Efeito suave ao rolar */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Opcional: Estilo para links âncora */
+:target {
+    scroll-margin-top: 100px;
+    /* Ajuste conforme a altura do seu header */
+    animation: highlight 1.5s ease;
+}
+
+
+
+/* Personalizano as setas do JS */
+/* FORÇAR a sobrescrita dos estilos do Swiper */
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+    color: #fdbe33 !important;
+    /* Amarelo */
+    width: 40px !important;
+    height: 40px !important;
+    background: rgba(3, 15, 39, 0.7) !important;
+    /* Azul com transparência */
+    border-radius: 50% !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Efeito hover */
+.swiper .swiper-button-next:hover,
+.swiper .swiper-button-prev:hover {
+    background: #fdbe33 !important;
+    /* Amarelo */
+    color: #030f27 !important;
+    /* Azul escuro */
+}
+
+/* Ícones internos */
+.swiper .swiper-button-next::after,
+.swiper .swiper-button-prev::after {
+    font-size: 20px !important;
+    font-weight: bold !important;
 }
