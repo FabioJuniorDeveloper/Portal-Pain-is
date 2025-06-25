@@ -32,21 +32,31 @@ setInterval(goNext, 5000)
 // Acabamentos
 
 // Imagens por acabamento
+// No seu script.js, dentro do objeto imagesByAcabamento
 const imagesByAcabamento = {
     "tijolo": [
-        "./src/images/vivo-fazenda-boa-vista-3-webp_11zon.webp",
         "./src/images/vivo-fazenda-boa-vista-7-compressed.jpg",
         "./src/images/surf-prototipo-4-compressed.jpg"
     ],
     "pedra-madeira": [
-        "./src/images/vivo-fazenda-boa-vista-7-compressed.jpg",
-        "./src/images/vivo-fazenda-boa-vista-7-compressed.jpg   ",
-        "./src/images/surf-47-compressed.jpg"
+        "./src/images/arua-2-compressed.jpg",
+
     ],
     "pedra-ferro": [
-        "./src/images/surf-47-compressed.jpg",
-        "./src/images/surf-47-compressed.jpg",
-        "./src/images/surf-47-compressed.jpg"
+        "./src/images/surf-49-compressed.webp",
+
+    ],
+    "madeira-demolicao": [
+        "./src/images/pasta-real-da-imagem-demolicao-1.jpg",
+        "./src/images/pasta-real-da-imagem-demolicao-2.jpg"
+    ],
+    "travertino-romano": [
+        "./src/images/pasta-real-da-imagem-travertino-1.jpg",
+        "./src/images/pasta-real-da-imagem-travertino-2.jpg"
+    ],
+    "tijolo-dry-joint": [
+        "./src/images/pasta-real-da-imagem-dry-joint-1.jpg",
+        "./src/images/pasta-real-da-imagem-dry-joint-2.jpg"
     ]
 };
 
@@ -122,6 +132,10 @@ var swiper = new Swiper('.swiper', {
             spaceBetween: 20
         },
         1024: {
+            slidesPerView: 2,
+            spaceBetween: 30
+        },
+        1225: {
             slidesPerView: 3,
             spaceBetween: 30
         }

@@ -264,7 +264,7 @@ main .slider-1 {
 }
 
 main .slider-2 {
-    background-image: url('../images/surf-49-compressed.webp');
+    background-image: url('../images/surf-49-compressed_resized.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -625,7 +625,7 @@ button.open-modal:hover {
 /* Serviços */
 
 #servicos {
-    margin: 30px 0;
+    margin: 50px 0;
 }
 
 h2.tittle-servicos {
@@ -917,6 +917,137 @@ h2.tittle-servicos {
 
 /* Responsividade */
 
+
+@media (max-width: 1024px) {
+    div#grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* Altera para 2 colunas */
+        gap: 25px;
+    }
+
+    /* Centraliza o título para telas menores se não estiver já */
+    .tittle-acabamento {
+        text-align: center;
+        margin-bottom: 30px;
+        /* Ajusta o espaçamento do título */
+    }
+}
+
+/* Ajustes para telas pequenas (smartphones) */
+@media (max-width: 768px) {
+    div#grid-container {
+        grid-template-columns: 1fr;
+        /* Altera para 1 coluna (cada item ocupa a largura total) */
+        gap: 20px;
+        padding: 0 15px;
+        /* Ajusta o padding para telas ainda menores */
+    }
+
+    .info-container h3 {
+        font-size: 18px;
+        /* Reduz o tamanho da fonte do título do produto */
+    }
+
+    .hover-text p {
+        font-size: 1.6rem;
+        /* Ajusta o tamanho da fonte da descrição no hover */
+    }
+}
+
+@media (min-width: 1025px) and (max-width:1225px) {
+
+    header .container,
+    section#sobre .container,
+    section#acabamento .container,
+    .diferencial .content,
+    /* Aplicar padding ao content do diferencial */
+    section.servicos .container,
+    .contato-container,
+    .footer-container {
+        padding: 0 20px;
+        /* Garante padding lateral em containers nesta faixa */
+    }
+
+    /* Regras para a seção .diferencial nesta faixa de largura */
+    .diferencial .content {
+        flex-direction: column;
+        /* **MUDANÇA AQUI: Empilha texto e imagem verticalmente** */
+        text-align: center;
+        /* **MUDANÇA AQUI: Centraliza o texto e os itens da seção** */
+        align-items: center;
+        /* Centraliza os itens na coluna */
+    }
+
+    .diferencial .text {
+        width: 90%;
+        /* **MUDANÇA AQUI: Aumenta a largura do texto para preencher mais o espaço** */
+        max-width: 700px;
+        /* Limita a largura máxima do texto para não ficar muito comprido */
+        padding-right: 0;
+        /* Remove padding extra se for empilhar */
+    }
+
+    .diferencial .text h2 {
+        font-size: 3.8rem;
+        /* Reduz um pouco o tamanho do título para caber melhor */
+        margin-bottom: 20px;
+    }
+
+    .diferencial .text p {
+        font-size: 1.6rem;
+        /* Ajusta o tamanho do parágrafo */
+        margin-bottom: 15px;
+    }
+
+    .diferencial .faq {
+        margin-top: 25px;
+        /* Ajusta espaçamento do FAQ */
+    }
+
+    .diferencial .faq-item {
+        text-align: left;
+        /* Mantém o texto do FAQ alinhado à esquerda dentro do item */
+        padding: 15px;
+    }
+
+    .diferencial .faq-item h4 {
+        font-size: 1.8rem;
+        /* Ajusta tamanho do h4 do FAQ */
+    }
+
+    .diferencial .faq-item p {
+        font-size: 1.4rem;
+        /* Ajusta tamanho do p do FAQ */
+    }
+
+    .diferencial .image {
+        width: 90%;
+        /* **MUDANÇA AQUI: Aumenta a largura da imagem para preencher mais o espaço** */
+        max-width: 600px;
+        /* Limita a largura máxima da imagem */
+        margin-top: 30px;
+        /* Espaço entre o texto e a imagem */
+    }
+
+    /* Seções de Cards e Produtos que você já tinha na media query */
+    div#grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section.cards .card-info-container .card-info {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        margin: 0 10px;
+    }
+
+    section.cards .cards-container {
+        justify-content: space-around;
+        gap: 0;
+    }
+}
+
+
 @media (min-width:769px) and (max-width:1024px) {
     .container {
         padding: 0 20px;
@@ -981,6 +1112,8 @@ h2.tittle-servicos {
     .footer-section {
         align-items: center;
     }
+
+
 
 }
 
@@ -1106,7 +1239,7 @@ h2.tittle-servicos {
     }
 
     main h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     main h3 {
@@ -1256,4 +1389,46 @@ html {
 .swiper .swiper-button-prev::after {
     font-size: 20px !important;
     font-weight: bold !important;
+}
+
+.slide-text {
+    position: relative;
+    /* Torna o texto posicionado em relação ao slide */
+    z-index: 2;
+    /* Garante que o texto esteja acima da imagem */
+    padding: 15px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    /* Um pouco mais de peso para o texto */
+    color: var(--color-text-second);
+    /* **MUDEI AQUI: Cor do texto para branco** */
+    background-color: rgba(3, 15, 39, 0.7);
+    /* **ADICIONEI AQUI: Fundo escuro semitransparente** */
+    width: 100%;
+    /* Ocupa a largura total na parte inferior */
+    line-height: 1.4;
+    min-height: 60px;
+    /* Garante uma altura mínima para o texto, mesmo que curto */
+    display: flex;
+    /* Para centralizar o texto verticalmente */
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    /* Inclui padding na largura/altura total */
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    /* A imagem preenche todo o slide */
+    object-fit: cover;
+    /* A imagem cobre a área, cortando se necessário */
+    border-radius: 12px 12px 0 0;
+    position: absolute;
+    /* Posiciona a imagem absolutamente dentro do slide */
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* Coloca a imagem abaixo do texto */
 }
