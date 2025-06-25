@@ -954,7 +954,7 @@ h2.tittle-servicos {
     }
 }
 
-@media (min-width: 1025px) and (max-width:1225px) {
+@media (min-width: 1025px) and (max-width:1440px) {
 
     header .container,
     section#sobre .container,
