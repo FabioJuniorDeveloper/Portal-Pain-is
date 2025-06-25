@@ -916,45 +916,16 @@ h2.tittle-servicos {
 }
 
 /* Responsividade */
-
-
-@media (max-width: 1024px) {
-    div#grid-container {
-        grid-template-columns: repeat(2, 1fr);
-        /* Altera para 2 colunas */
-        gap: 25px;
-    }
-
-    /* Centraliza o título para telas menores se não estiver já */
-    .tittle-acabamento {
-        text-align: center;
-        margin-bottom: 30px;
-        /* Ajusta o espaçamento do título */
-    }
-}
-
-/* Ajustes para telas pequenas (smartphones) */
-@media (max-width: 768px) {
-    div#grid-container {
-        grid-template-columns: 1fr;
-        /* Altera para 1 coluna (cada item ocupa a largura total) */
-        gap: 20px;
-        padding: 0 15px;
-        /* Ajusta o padding para telas ainda menores */
-    }
-
-    .info-container h3 {
-        font-size: 18px;
-        /* Reduz o tamanho da fonte do título do produto */
-    }
-
-    .hover-text p {
-        font-size: 1.6rem;
-        /* Ajusta o tamanho da fonte da descrição no hover */
-    }
-}
-
 @media (min-width: 1025px) and (max-width:1440px) {
+
+    section.cards .card-info-container .card-info {
+        gap: 1rem;
+
+    }
+
+    section.cards {
+        height: 200px;
+    }
 
     header .container,
     section#sobre .container,
@@ -1046,6 +1017,44 @@ h2.tittle-servicos {
         gap: 0;
     }
 }
+
+@media (max-width: 1024px) {
+    div#grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* Altera para 2 colunas */
+        gap: 25px;
+    }
+
+    /* Centraliza o título para telas menores se não estiver já */
+    .tittle-acabamento {
+        text-align: center;
+        margin-bottom: 30px;
+        /* Ajusta o espaçamento do título */
+    }
+}
+
+/* Ajustes para telas pequenas (smartphones) */
+@media (max-width: 768px) {
+    div#grid-container {
+        grid-template-columns: 1fr;
+        /* Altera para 1 coluna (cada item ocupa a largura total) */
+        gap: 20px;
+        padding: 0 15px;
+        /* Ajusta o padding para telas ainda menores */
+    }
+
+    .info-container h3 {
+        font-size: 18px;
+        /* Reduz o tamanho da fonte do título do produto */
+    }
+
+    .hover-text p {
+        font-size: 1.6rem;
+        /* Ajusta o tamanho da fonte da descrição no hover */
+    }
+}
+
+
 
 
 @media (min-width:769px) and (max-width:1024px) {
