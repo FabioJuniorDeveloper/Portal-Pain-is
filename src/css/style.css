@@ -1002,8 +1002,10 @@ h2.tittle-servicos {
 
     /* Seções de Cards e Produtos que você já tinha na media query */
     div#grid-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(320px, 530px));
+        justify-content: center;
     }
+
 
     section.cards .card-info-container .card-info {
         flex-direction: column;
