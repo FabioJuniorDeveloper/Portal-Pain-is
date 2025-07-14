@@ -35,8 +35,9 @@ setInterval(goNext, 5000)
 // No seu script.js, dentro do objeto imagesByAcabamento
 const imagesByAcabamento = {
     "tijolo": [
-        "./src/images/vivo-fazenda-boa-vista-7-compressed.jpg",
-        "./src/images/surf-prototipo-4-compressed.jpg"
+        "./src/images/tijolo-join.webp",
+        "./src/images/surf-prototipo-4-compressed.jpg",
+        "./src/images/tijolo-branco.webp"
     ],
     "pedra-madeira": [
         "./src/images/arua-2-compressed.jpg",
@@ -51,7 +52,7 @@ const imagesByAcabamento = {
         "./src/images/pasta-real-da-imagem-demolicao-2.jpg"
     ],
     "travertino-romano": [
-        "./src/images/pasta-real-da-imagem-travertino-1.jpg",
+        "./src/images/travertino-romano-exemplo.webp",
         "./src/images/pasta-real-da-imagem-travertino-2.jpg"
     ],
     "tijolo-dry-joint": [
@@ -143,6 +144,25 @@ var swiper = new Swiper('.swiper', {
 });
 
 
+
+// Nova instância do Swiper para a seção Diferencial
+var swiperThermoTech = new Swiper('.swiper-diferencial', {
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 20,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+
+    pagination: {
+        el: '.swiper-pagination-thermotech',
+        clickable: true,
+    },
+});
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const menuBtn = document.querySelector(".menu-btn");
     const navbar = document.querySelector(".navbar");
@@ -160,6 +180,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
 
 
 

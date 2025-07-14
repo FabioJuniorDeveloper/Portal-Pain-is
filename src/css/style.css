@@ -257,14 +257,14 @@ main .container-slider {
 }
 
 main .slider-1 {
-    background-image: url('../images/surf-40-compressed.webp');
+    background-image: url('../images/surf-49-compressed_resized.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 main .slider-2 {
-    background-image: url('../images/surf-49-compressed_resized.webp');
+    background-image: url('../images/thermo-tech.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -309,6 +309,10 @@ h3 {
     font-size: 2.4rem;
     color: #FFF;
     margin-bottom: 15px;
+}
+
+main h3.thermo-tech {
+    text-align: center;
 }
 
 .btn,
