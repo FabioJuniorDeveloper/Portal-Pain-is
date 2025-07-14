@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/style.min.css">
     <link rel="icon" type="image/webp" href="src/images/LOGOMARCA.png">
     <link rel="stylesheet" href="src/css/Hover-master/css/hover.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -12,8 +12,6 @@
     <title>Portal Painéis</title>
 
 
-    <!-- SEO -->
-    <!-- SEO -->
     <meta name="description"
         content="A Portal Painéis é líder em revestimentos sintéticos no Brasil. Qualidade, inovação e sustentabilidade há mais de 16 anos.">
     <meta name="keywords"
@@ -21,7 +19,6 @@
     <meta name="author" content="Portal Painéis">
     <meta name="robots" content="index, follow">
 
-    <!-- Open Graph -->
     <meta property="og:title" content="Portal Painéis - Revestimentos Sintéticos de Alta Qualidade">
     <meta property="og:description"
         content="Transforme seu espaço com painéis sintéticos inovadores. Veja nossos produtos!">
@@ -29,23 +26,17 @@
     <meta property="og:url" content="https://www.portalpaineis.com.br">
     <meta property="og:type" content="website">
 
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Portal Painéis - Revestimentos com Estilo">
     <meta name="twitter:description" content="Revestimentos leves, duráveis e sofisticados.">
     <meta name="twitter:image" content="https://www.portalpaineis.com.br/src/images/ICONE-PORTAL.webp">
-</head>
-<!-- SEO / -->
-
-
-<!-- SEO / -->
-</head>
+    </head>
 
 <body>
     <header>
         <div class="container">
             <nav>
-                <a href="#" class="logo"><img src="src/images/LOGOTIPO.webp" alt="Logotipo da Portal Painéis"></a>
+                <a href="#" class="logo"><img src="src/images/LOGOTIPO.webp" alt="Logotipo da Portal Painéis" loading="lazy"></a>
                 <button class="menu-btn" aria-label="Abrir menu">
                     <div></div>
                     <div></div>
@@ -262,9 +253,7 @@
         <div class="content container">
             <div class="text">
                 <h2><span>Construção a Seco com</span> ThermoTech: Eficiência e Sustentabilidade</h2>
-                <p>Execute sua obra de maneira rápida, eficiente e sustentável utilizando os Revestimentos Sintéticos de
-                    grandes dimensões da PORTAL. Textura idêntica ao elemento natural, proporcionando acabamento
-                    sofisticado.</p>
+                [cite_start]<p>Otimize sua obra com os Revestimentos Sintéticos de grandes dimensões da PORTAL, impulsionados pela exclusiva **tecnologia ThermoTech**[cite: 5]. [cite_start]Este material inovador, à base de resina e fibra de vidro, oferece isolamento termoacústico de alta densidade[cite: 5]. [cite_start]Garanta uma construção a seco rápida, eficiente e sustentável, com acabamento sofisticado idêntico ao natural[cite: 5].</p>
 
                 <div class="faq">
                     <div class="faq-item">
@@ -318,7 +307,7 @@
                             <div class="slide-text">Versatilidade que acompanha seu projeto</div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="src/images/arua-2-compressed.jpg"
+                            <img src="src/images/aruja-vintage-branco.webp"
                                 alt="Visual de alto padrão, sensação de aconchego" loading="lazy">
                             <div class="slide-text">Visual de alto padrão, sensação de aconchego</div>
                         </div>
@@ -403,14 +392,13 @@
         </div>
     </footer>
 
-    <!-- Modal -->
     <div class="modal" onclick="closeModal()">
         <div class="modal-content" onclick="event.stopPropagation()">
             <span class="close-modal" onclick="closeModal()">X</span>
             <div class="carousel">
-                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="prev" onclick="changeSlide(-1)">❮</button>
                 <div class="carousel-images"></div>
-                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                <button class="next" onclick="changeSlide(1)">❯</button>
             </div>
         </div>
     </div>

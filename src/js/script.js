@@ -36,7 +36,7 @@ setInterval(goNext, 5000)
 const imagesByAcabamento = {
     "tijolo": [
         "./src/images/tijolo-join.webp",
-        "./src/images/surf-prototipo-4-compressed.jpg",
+        "./src/images/surf-prototipo-4-compressed.webp",
         "./src/images/tijolo-branco.webp"
     ],
     "pedra-madeira": [
