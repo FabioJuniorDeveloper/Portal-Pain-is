@@ -145,21 +145,7 @@ var swiper = new Swiper('.swiper', {
 
 
 
-// Nova instância do Swiper para a seção Diferencial
-var swiperThermoTech = new Swiper('.swiper-diferencial', {
-    slidesPerView: 1,
-    loop: true,
-    spaceBetween: 20,
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-    },
 
-    pagination: {
-        el: '.swiper-pagination-thermotech',
-        clickable: true,
-    },
-});
 
 
 
@@ -180,6 +166,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+
 
 
 

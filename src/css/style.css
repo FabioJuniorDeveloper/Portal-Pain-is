@@ -1302,7 +1302,7 @@ h2.tittle-servicos {
     }
 
     main h1 {
-        font-size: 2.0rem;
+        font-size: 1.8rem;
     }
 
     main h3 {
@@ -1495,3 +1495,225 @@ html {
     z-index: 1;
     /* Coloca a imagem abaixo do texto */
 }
+
+
+/* No seu arquivo Portal-Painel/src/css/style.css */
+
+/* ... (Seu código existente antes da seção 'avaliacoes') ... */
+
+/* ====================
+   SEÇÃO AVALIAÇÕES (REVIEWS) - AINDA MAIS MODERNO E CORREÇÃO DA PAGINAÇÃO
+   ==================== */
+.avaliacoes {
+    padding: 70px 0; /* Aumentei um pouco o padding vertical */
+    background-color: var(--bg-color); /* Fundo BRANCO */
+    color: var(--color-primary); /* Cor padrão do texto da seção (azul escuro) */
+    text-align: center;
+}
+
+.tittle-avaliacoes {
+    font-size: 4.5rem; /* Ligeiramente menor */
+    margin-bottom: 50px; /* Mais espaço abaixo do título */
+    color: var(--color-primary); /* Título em AZUL ESCURO */
+    font-weight: 700;
+    letter-spacing: -0.02em; /* Pequeno ajuste no espaçamento entre letras para modernidade */
+}
+
+/* Estilo para cada card de avaliação */
+.swiper-avaliacoes {
+    width: 88%; /* Ligeiramente mais largo */
+    max-width: 1020px; /* Largura máxima um pouco maior */
+    margin: 0 auto;
+    padding-bottom: 60px; /* Mais espaço para a paginação */
+}
+
+.review-card {
+    background-color: #fff; /* Fundo totalmente branco */
+    color: var(--color-text); /* Texto cinza padrão */
+    border-radius: 16px; /* Bordas um pouco mais arredondadas */
+    padding: 40px; /* Mais padding interno */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); /* Sombra mais suave e moderna */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 260px; /* Ajustei a altura mínima */
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eee; /* Adicionei uma borda sutil */
+}
+
+.review-card:hover {
+    transform: translateY(-8px); /* Elevação um pouco maior no hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12); /* Sombra mais intensa no hover */
+}
+
+.review-card .stars {
+    font-size: 2.4rem; /* Tamanho das estrelas ligeiramente menor */
+    color: var(--color-second); /* Estrelas amarelas */
+    margin-bottom: 18px; /* Mais espaço abaixo das estrelas */
+}
+
+.review-card .stars .bx {
+    margin: 0 1px;
+}
+
+.review-card .review-text {
+    font-size: 1.5rem; /* Texto do review um pouco menor */
+    line-height: 1.6;
+    margin-bottom: 20px; /* Mais espaço abaixo do texto */
+    font-style: normal;
+    font-weight: 400;
+    color: var(--color-text);
+}
+
+.review-card .reviewer-name {
+    font-size: 1.4rem; /* Nome do avaliador um pouco menor */
+    font-weight: 600;
+    color: var(--color-primary);
+    opacity: 0.8; /* Levemente mais sutil */
+}
+
+/* Estilos para as setas de navegação */
+.swiper-button-avaliacoes-next,
+.swiper-button-avaliacoes-prev {
+    color: var(--color-primary) !important;
+    background: #fff !important; /* Fundo branco para as setas */
+    border-radius: 50% !important;
+    width: 42px !important;
+    height: 42px !important;
+    font-size: 2.0rem !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adicionei uma sombra sutil nas setas */
+    transition: all 0.3s ease !important;
+}
+
+.swiper-button-avaliacoes-next:hover,
+.swiper-button-avaliacoes-prev:hover {
+    background: var(--color-second) !important; /* Fundo AMARELO no hover */
+    color: var(--color-primary) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra mais intensa no hover das setas */
+}
+
+/* Estilos para as bolinhas de paginação - CORREÇÃO DA POSIÇÃO */
+.swiper-pagination-avaliacoes.swiper-pagination-bullets {
+    bottom: 20px !important; /* Posiciona as bolinhas mais abaixo do nome */
+}
+
+.swiper-pagination-avaliacoes .swiper-pagination-bullet {
+    background: #ccc !important; /* Bolinhas cinzas claras (inativas) */
+    opacity: 1 !important;
+    width: 10px; /* Tamanho das bolinhas */
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.swiper-pagination-avaliacoes .swiper-pagination-bullet-active {
+    background: var(--color-second) !important; /* Bolinha ativa em AMARELO */
+    opacity: 1 !important;
+}
+
+/* ====================
+   RESPONSIVIDADE para AVALIAÇÕES - AJUSTES FINOS
+   ==================== */
+@media (max-width: 1024px) {
+    .swiper-avaliacoes {
+        width: 92%;
+    }
+    .tittle-avaliacoes {
+        font-size: 4.0rem;
+        margin-bottom: 40px;
+    }
+    .review-card {
+        padding: 35px;
+        min-height: 240px;
+    }
+    .review-card .review-text {
+        font-size: 1.4rem;
+    }
+    .review-card .reviewer-name {
+        font-size: 1.3rem;
+    }
+    .swiper-button-avaliacoes-next,
+    .swiper-button-avaliacoes-prev {
+        width: 38px !important;
+        height: 38px !important;
+        font-size: 1.8rem !important;
+    }
+    .swiper-pagination-avaliacoes.swiper-pagination-bullets {
+        bottom: 15px !important;
+    }
+    .swiper-pagination-avaliacoes .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        margin: 0 4px;
+    }
+}
+
+@media (max-width: 767px) {
+    .swiper-avaliacoes {
+        width: 96%;
+        padding-bottom: 50px;
+    }
+    .tittle-avaliacoes {
+        font-size: 3.5rem;
+        margin-bottom: 30px;
+    }
+    .review-card {
+        padding: 30px;
+        min-height: 220px;
+    }
+    .review-card .review-text {
+        font-size: 1.3rem;
+    }
+    .review-card .reviewer-name {
+        font-size: 1.2rem;
+    }
+    .swiper-button-avaliacoes-next,
+    .swiper-button-avaliacoes-prev {
+        width: 32px !important;
+        height: 32px !important;
+        font-size: 1.6rem !important;
+    }
+    .swiper-pagination-avaliacoes.swiper-pagination-bullets {
+        bottom: 10px !important;
+    }
+    .swiper-pagination-avaliacoes .swiper-pagination-bullet {
+        width: 6px;
+        height: 6px;
+        margin: 0 3px;
+    }
+}
+
+@media (max-width: 425px) {
+    .tittle-avaliacoes {
+        font-size: 3.0rem;
+        margin-bottom: 25px;
+    }
+    .review-card {
+        padding: 25px;
+        min-height: auto; /* Altura automática em telas menores */
+    }
+    .review-card .review-text {
+        font-size: 1.2rem;
+    }
+    .review-card .reviewer-name {
+        font-size: 1.1rem;
+    }
+    .swiper-button-avaliacoes-next,
+    .swiper-button-avaliacoes-prev {
+        width: 28px !important;
+        height: 28px !important;
+        font-size: 1.4rem !important;
+    }
+    .swiper-pagination-avaliacoes.swiper-pagination-bullets {
+        bottom: 5px !important;
+    }
+}
+
+
+
+
