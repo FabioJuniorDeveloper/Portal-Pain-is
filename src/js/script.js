@@ -48,12 +48,12 @@ const imagesByAcabamento = {
 
     ],
     "madeira-demolicao": [
-        "./src/images/pasta-real-da-imagem-demolicao-1.jpg",
-        "./src/images/pasta-real-da-imagem-demolicao-2.jpg"
+        "./src/images/madeira-demolição.webp",
+        
     ],
     "travertino-romano": [
         "./src/images/travertino-romano-exemplo.webp",
-        "./src/images/pasta-real-da-imagem-travertino-2.jpg"
+        "./src/images/travertino-romano-ex1.webp"
     ],
     "tijolo-dry-joint": [
         "./src/images/pasta-real-da-imagem-dry-joint-1.jpg",
