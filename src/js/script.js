@@ -35,29 +35,28 @@ setInterval(goNext, 5000)
 // No seu script.js, dentro do objeto imagesByAcabamento
 const imagesByAcabamento = {
     "tijolo": [
-        "./src/images/tijolo-join.webp",
-        "./src/images/surf-prototipo-4-compressed.webp",
-        "./src/images/tijolo-branco.webp"
+        "./src/images/tijolo-join.jpg",
+        "./src/images/surf-prototipo-4-compressed.jpg",
+        "./src/images/tijolo-branco.jpg"
     ],
     "pedra-madeira": [
         "./src/images/arua-2-compressed.jpg",
 
     ],
     "pedra-ferro": [
-        "./src/images/surf-49-compressed.webp",
+        "./src/images/surf-49-compressed.jpg",
 
     ],
     "madeira-demolicao": [
-        "./src/images/madeira-demolição.webp",
+        "./src/images/madeira-demolição.jpg",
         
     ],
     "travertino-romano": [
-        "./src/images/travertino-romano-exemplo.webp",
-        "./src/images/travertino-romano-ex1.webp"
+        "./src/images/travertino-romano-exemplo.jpg",
+        "./src/images/travertino-romano-ex1.jpg"
     ],
     "tijolo-dry-joint": [
-        "./src/images/pasta-real-da-imagem-dry-joint-1.jpg",
-        "./src/images/pasta-real-da-imagem-dry-joint-2.jpg"
+        "./src/images/tijolo-cafe-brasil-ex1.jpeg",
     ]
 };
 
@@ -142,10 +141,6 @@ var swiper = new Swiper('.swiper', {
         }
     }
 });
-
-
-
-
 
 
 

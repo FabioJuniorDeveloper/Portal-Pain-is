@@ -259,21 +259,21 @@ main .container-slider {
 }
 
 main .slider-1 {
-    background-image: url('../images/surf-49-compressed_resized.webp');
+    background-image: url('../images/surf-49-compressed_resized.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 main .slider-2 {
-    background-image: url('../images/thermo-tech.webp');
+    background-image: url('../images/thermo-tech.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 main .slider-3 {
-    background-image: url('../images/surf-47-compressed.webp');
+    background-image: url('../images/surf-47-compressed.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -335,6 +335,10 @@ button.btn:hover {
 }
 
 /* SOBRE */
+.destaque-amarelo {
+    color: var(--color-second); /* Cor amarela do seu tema */
+    font-weight: 600; /* Pode ser bold, 600 ou 700 para um destaque sutil */
+}
 section#sobre {
     padding: 45px 0;
 }
