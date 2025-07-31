@@ -40,7 +40,7 @@ const imagesByAcabamento = {
         "./src/images/tijolo-branco.jpg"
     ],
     "pedra-madeira": [
-        "./src/images/arua-2-compressed.jpg",
+        "./src/images/pedra-madeira-ex1.jpg",
 
     ],
     "pedra-ferro": [
@@ -57,6 +57,7 @@ const imagesByAcabamento = {
     ],
     "tijolo-dry-joint": [
         "./src/images/tijolo-cafe-brasil-ex1.jpeg",
+        "./src/images/tijolo-dry-ex2.jpeg"
     ]
 };
 
